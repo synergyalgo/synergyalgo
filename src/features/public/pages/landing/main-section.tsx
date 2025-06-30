@@ -409,16 +409,15 @@ const LandingSection = () => {
                         className="div"
                     >
                         <h2 className="text-center text-xl md:text-4xl font-bold">
-                            Empower your business  <br />
-                            with top-class software development
+                            Transform your business <br /> with high-quality software solutions.
                         </h2>
 
                     </motion.div>
 
-                    <World
+                    {/* <World
                         data={sampleArcs}
                         globeConfig={globeConfig}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>)
