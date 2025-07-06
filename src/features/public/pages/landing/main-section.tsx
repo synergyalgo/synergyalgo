@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 
 import { World } from "./globe";
+import { ArrowRight as ArrowRightIcon, Code as CodeIcon } from "lucide-react";
 
 const LandingSection = () => {
     const globeConfig = {
@@ -26,7 +27,7 @@ const LandingSection = () => {
         autoRotate: true,
         autoRotateSpeed: 0.5,
     };
-    const colors = ["#d40606", "#f63b3b", "#f16363"];
+    const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
     const sampleArcs = [
         {
             order: 1,
@@ -390,10 +391,12 @@ const LandingSection = () => {
         },
     ];
 
+    const n = [0, 1, 2];
+
     return (
         <div>
             <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto">
-                <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+                <div className="relative overflow-hidden h-full md:h-[40rem] px-4">
                     <motion.div
                         initial={{
                             opacity: 0,
@@ -408,19 +411,44 @@ const LandingSection = () => {
                         }}
                         className="div"
                     >
-                        <h2 className="text-center text-xl md:text-4xl font-bold">
+                        <h2 className="text-center text-2xl md:text-4xl font-bold">
                             Transform your business <br /> with high-quality software solutions.
                         </h2>
 
                     </motion.div>
 
-                    {/* <World
+                    <World
                         data={sampleArcs}
                         globeConfig={globeConfig}
-                    /> */}
+                    />
+                    {/* 
+                    <div className="absolute z-50 bottom-0">
+                        <div className="md:grid md:grid-cols-3">
+                            {n.map((i) => (
+                                <div className="backdrop-blur-lg p-8 rounded-lg bg-white/9" key={i}>
+                                    <div className="mb-6">
+                                        <div className="text-lg font-semibold">Custom Software Development</div>
+                                        <div className="text-sm font-semibold">Build Tailorder Softwares</div>
+                                        <div>
+                                            <p className="text-sm mt-2">
+                                                We specialize in creating custom software solutions tailored to your unique business needs. Our team of experts will work closely with you to understand your requirements and deliver high-quality software that drives efficiency and growth.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-center justify-between">
+                                        <CodeIcon />
+                                        <ArrowRightIcon />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+ */}
+
                 </div>
             </div>
-        </div>)
+        </div >)
 }
 
 
