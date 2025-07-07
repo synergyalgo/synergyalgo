@@ -4,16 +4,19 @@ import { Header } from "../../layout/header";
 import { LandingSection } from "./main-section";
 import { ServicesSection } from "./services-section";
 import { ContactSection } from "./contact-section";
+import { Footer } from "../../layout/footer";
 
 const Index: React.FC = () => {
     return (
         <div className="bg-primary text-primary-foreground min-h-screen">
             <Header />
-            <div >
+            <main>
                 <LandingSection />
                 <ServicesSection />
                 <ContactSection />
-            </div>
+            </main>
+
+            <Footer />
         </div>
     )
 }
