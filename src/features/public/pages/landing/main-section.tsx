@@ -16,7 +16,7 @@ const LandingSection = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        <h2 className="text-center text-2xl md:text-4xl font-bold">
+                        <h2 className="text-center text-2xl md:text-4xl font-extrabold">
                             Transform your business <br /> with high-quality Software Solutions.
                         </h2>
                     </motion.div>

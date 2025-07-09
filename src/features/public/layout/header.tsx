@@ -22,20 +22,16 @@ export const Header = () => {
                             <a href="/" className="relative group hover:text-blue-400 transition-colors ">
                                 <span >{item}</span>
                                 <div className="bg-blue-400 h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
-
                             </a>
-
                         </div>
                     )}
-
-                    {/* <a href="/about" className="text-white ">About</a>
-                    <a href="/contact" className="text-white">Contact</a> */}
 
                 </div>
 
                 <div className="hidden md:flex">
-                    <button className="py-3 px-6 text-sm rounded-md font-semibold border-2 border-white">Let's Chat</button>
+                    <button className="py-2 px-6 text-sm rounded-md font-semibold border-2 hover:text-blue-400 transition-colors cursor-pointer">Let's Chat</button>
                 </div>
+
                 <div className="md:hidden">
                     <MenuBar />
                 </div>
