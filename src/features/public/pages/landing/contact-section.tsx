@@ -26,10 +26,10 @@ export const ContactSection = () => {
                     <div>
                         <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
                         <p className="text-gray-600 mb-8 leading-relaxed">
-                            We believe in turning ideas into reality and we're ready to join your journey. 
+                            We believe in turning ideas into reality and we're ready to join your journey.
                             Reach out to us and let's start discussing your project.
                         </p>
-                        
+
                         {/* Contact Cards */}
                         <div className="space-y-6">
                             <div className="flex items-center p-6 bg-gray-50 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-300">
@@ -61,76 +61,78 @@ export const ContactSection = () => {
                     {/* Contact Form */}
                     <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
                         <h3 className="text-2xl font-semibold text-gray-900 mb-6">Send us a Message</h3>
-                        
+
                         <form onSubmit={handleSubmit} className="space-y-6">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label htmlFor="first_name" className="block text-sm font-medium text-gray-700 mb-2">
-                                        First Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="first_name"
-                                        id="first_name"
-                                        placeholder="John"
-                                        required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400"
-                                    />
-                                </div>
-                                <div>
-                                    <label htmlFor="last_name" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Last Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="last_name"
-                                        id="last_name"
-                                        placeholder="Doe"
-                                        required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400"
-                                    />
-                                </div>
-                            </div>
+// ...existing code...
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+        <label htmlFor="first_name" className="block text-sm font-medium text-gray-700 mb-2">
+            First Name
+        </label>
+        <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="John"
+            required
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400 text-gray-900"
+        />
+    </div>
+    <div>
+        <label htmlFor="last_name" className="block text-sm font-medium text-gray-700 mb-2">
+            Last Name
+        </label>
+        <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            placeholder="Doe"
+            required
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400 text-gray-900"
+        />
+    </div>
+</div>
 
-                            <div>
-                                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Company Name <span className="text-gray-400">(Optional)</span>
-                                </label>
-                                <input
-                                    type="text"
-                                    name="company"
-                                    id="company"
-                                    placeholder="Your Company"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400"
-                                />
-                            </div>
+<div>
+    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+        Company Name <span className="text-gray-400">(Optional)</span>
+    </label>
+    <input
+        type="text"
+        name="company"
+        id="company"
+        placeholder="Your Company"
+        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400 text-gray-900"
+    />
+</div>
 
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Email Address
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="example@domain.com"
-                                    required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400"
-                                />
-                            </div>
+<div>
+    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+        Email Address
+    </label>
+    <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@domain.com"
+        required
+        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400 text-gray-900"
+    />
+</div>
 
-                            <div>
-                                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Phone Number <span className="text-gray-400">(Optional)</span>
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    id="phone"
-                                    placeholder="+1 (555) 123-4567"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400"
-                                />
-                            </div>
+<div>
+    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+        Phone Number <span className="text-gray-400">(Optional)</span>
+    </label>
+    <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="+1 (555) 123-4567"
+        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400 text-gray-900"
+    />
+</div>
+// ...existing code...
 
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
@@ -140,8 +142,8 @@ export const ContactSection = () => {
                                     name="message"
                                     id="message"
                                     placeholder="Tell us about your project and how we can help you..."
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400 resize-none"
-                                    rows={5}
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400 resize-none text-gray-900"
+                                    rows={3}
                                 />
                             </div>
 
