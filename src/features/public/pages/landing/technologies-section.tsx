@@ -87,7 +87,7 @@ const technologies: Record<string, TechnologyType[]> = {
 
 export const TechnologySection = () => {
     return (
-        <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
+        <div className="bg-[#020021] text-white py-20">
             <div className="max-w-7xl mx-auto px-4 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -95,7 +95,7 @@ export const TechnologySection = () => {
                         Our Technology
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-400"> Stack</span>
                     </h2>
-                    <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
                         We leverage cutting-edge technologies to build scalable, efficient, and robust solutions that drive your business forward.
                     </p>
                 </div>
@@ -109,14 +109,13 @@ export const TechnologySection = () => {
                                 <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
                                     {category}
                                 </h3>
-                                <div className="flex-1 h-px bg-gradient-to-r from-slate-600 to-transparent"></div>
+                                <div className="flex-1 h-px bg-gradient-to-r from-white/20 to-transparent"></div>
                             </div>
-                            
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+                              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
                                 {techs.map((tech, index) => (
                                     <div 
                                         key={tech.name || index} 
-                                        className="group/card bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/10"
+                                        className="group/card bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/10"
                                     >
                                         <div className="flex flex-col items-center text-center space-y-3">
                                             {tech.image ? (
@@ -131,13 +130,13 @@ export const TechnologySection = () => {
                                                     <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-500/20 to-violet-500/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300"></div>
                                                 </div>
                                             ) : (
-                                                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-slate-600 to-slate-700 flex items-center justify-center">
+                                                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
                                                     <div className="w-6 h-6 bg-gradient-to-br from-cyan-400 to-violet-400 rounded-sm"></div>
                                                 </div>
                                             )}
                                             
                                             {tech.name && (
-                                                <span className="text-sm font-medium text-slate-300 group-hover/card:text-white transition-colors duration-300 leading-tight">
+                                                <span className="text-sm font-medium text-gray-300 group-hover/card:text-white transition-colors duration-300 leading-tight">
                                                     {tech.name}
                                                 </span>
                                             )}
@@ -147,11 +146,9 @@ export const TechnologySection = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-
-                {/* Bottom CTA */}
-                <div className="text-center mt-16 pt-12 border-t border-slate-700">
-                    <p className="text-slate-400 mb-6">
+                </div>                {/* Bottom CTA */}
+                <div className="text-center mt-16 pt-12 border-t border-white/20">
+                    <p className="text-gray-400 mb-6">
                         Don't see your preferred technology? We're always learning and adapting.
                     </p>
                     <button className="bg-gradient-to-r from-cyan-500 to-violet-600 hover:from-cyan-600 hover:to-violet-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
